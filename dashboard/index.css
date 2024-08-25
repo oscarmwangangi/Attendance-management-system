@@ -1,0 +1,77 @@
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+    height: 90vh;
+    color: rgb(0, 0, 0);
+    font-family: emoji;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:  sans-serif;
+}
+h2{
+    margin-top: -50px;
+}
+form{
+    
+    display: grid;
+    justify-content: left;
+    padding: 30px;
+    color: rgb(5, 5, 5);
+    width: 250px;
+    height: 300px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 10px;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+input{
+    height: 35px;
+    width: 200px;
+    border-radius: 10px;
+    border: 0cap;
+    padding-left: 40px;
+    backdrop-filter: blur(1px);
+    background-color: rgba(255,255,255,0.1);
+    margin-top: 10px;
+}
+input:focus {
+  border: 2px solid #23d5ab; /* Change the border color and thickness */
+  outline: none; /* Remove the default outline */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Optional: Smooth transition */
+}
+
+input[type="submit"] {
+    background-color: #0d6efd;
+    height: 40px;
+    border-radius: 10px;
+    font-size: large;
+    border: none;
+    color: rgb(255, 255, 255);
+    transition: background-color 0.3s, color 0.3s;
+    padding-left: 8px;
+    width: 80px;
+}
+input[type="submit"]:hover {
+   
+    color: white; 
+    background-color: rgb(82, 16, 157);
+}
+::placeholder{
+    color: rgb(59, 58, 58);
+}

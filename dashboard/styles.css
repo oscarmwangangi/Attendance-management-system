@@ -1,0 +1,46 @@
+
+.container {
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+select, button {
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+button{
+    box-shadow: 20px ;
+    padding: 4px;
+    border-left: solid#f0f0f0;
+    border-top: solid#f0f0f0;
+    border-bottom: solid#6c757d;;
+    border-right:solid #6c757d; ;
+}
+button:hover{
+    background-color: #ced4da;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}

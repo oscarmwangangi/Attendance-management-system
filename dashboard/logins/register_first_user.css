@@ -1,0 +1,90 @@
+body{
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;  
+}
+
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  .body{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    height:90vh;
+}
+.form{
+    margin-top: 50px;
+    backdrop-filter: blur(2px);
+    background-color: rgba(255,255,255,0.1);
+    display: flex;
+    height: 460px;
+    width: 400px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    font-size: 25px;
+    /* border: solid rgb(200, 200, 200); */
+    
+}
+input{
+    height: 45px;
+    width: 300px;
+    border-radius: 10px;
+    border: 0cap;
+    padding-left: 40px;
+    backdrop-filter: blur(1px);
+    background-color: rgba(255,255,255,0.1);
+}
+input:focus {
+  border: 2px solid #23d5ab; /* Change the border color and thickness */
+  outline: none; /* Remove the default outline */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Optional: Smooth transition */
+}
+div{
+    margin-bottom: 7px;
+}
+input[type="submit"]{
+    background-color: #000000;
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+    padding: 0;
+}
+#role{
+  backdrop-filter: blur(1px);
+    background-color: rgba(255,255,255,0.1);
+    border: none;
+}
+#role:focus {
+  border: 2px solid #23d5ab; /* Change the border color and thickness */
+  outline: none; /* Remove the default outline */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Optional: Smooth transition */
+}
+input[type="submit"]:hover{
+    opacity: 0.9;
+}
+h2{
+    color: rgb(0, 0, 0);
+}
+.btn-secondary{
+  background-color: #2c2c2c;
+  border: 1px solid rgb(20, 20, 20);
+  float: none;
+}
+.btn-secondary:hover{
+  background-color: #000000;
+  border: 1px solid rgb(0, 0, 0);
+  opacity: 0.7;
+}
