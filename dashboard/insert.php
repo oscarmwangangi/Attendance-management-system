@@ -38,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         // Insert new record
         $query = "INSERT INTO attache (ID_number, name, school, course, date_joined, date_leaving, email, phone_number, Department, Supervisor) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ? )";
         $stmt = $pdo->prepare($query);
-        $result = $stmt->execute([$ID_number, $name, $school, $course, $date_joined, $date_leaving, $school_supervisor_name, $school_supervisor_number, $email, $phone_number, $Department, $Supervisor]);
+        $result = $stmt->execute([$ID_number, $name, $school, $course, $date_joined, $date_leaving, $email, $phone_number, $Department, $Supervisor]);
 
         if ($result) {
             $_SESSION['success'] = 'Record added successfully';
